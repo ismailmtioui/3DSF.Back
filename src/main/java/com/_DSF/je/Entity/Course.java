@@ -24,9 +24,6 @@ public class Course {
     @ManyToMany
     private List<Student> students;
 
-    @OneToMany(mappedBy = "course")
-    private List<Submission> submissions;
-
     public Course(String title, Teacher teacher) {
         this.title = title;
         this.teacher = teacher;
