@@ -61,6 +61,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <!-- Removed the version tag to use the default version from Spring Boot parent -->
         </dependency>
 
         <!-- JUnit 5 Dependencies -->
@@ -107,5 +108,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

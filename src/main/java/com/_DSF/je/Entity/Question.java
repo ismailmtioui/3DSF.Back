@@ -6,14 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
-/**
- * @author amz
- * @version 1.0
- *
- **/
-
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,6 +13,7 @@ import java.util.List;
 @Getter
 public class Question {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String question;
 
