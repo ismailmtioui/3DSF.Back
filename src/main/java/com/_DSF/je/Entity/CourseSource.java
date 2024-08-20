@@ -14,7 +14,7 @@ import lombok.*;
 public class CourseSource {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String videoID;
+    private Long videoID;
     private String courseName;
     private String videoSource;
     private String filePath;

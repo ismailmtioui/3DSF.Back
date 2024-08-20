@@ -1,7 +1,7 @@
 package com._DSF.je.Entity;
 
-import com._DSF.je.Enumeration.Role;
 import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,10 +10,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class Admin extends User {
 
-    public Admin(String name, String email) {
-        super(name, email, Role.ADMIN);
-    }
 }
 

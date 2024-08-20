@@ -14,5 +14,5 @@ import lombok.*;
 public class Grade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String gradeId;
+    private Long gradeId;
 }
